@@ -1,13 +1,13 @@
 const Manager = require("../lib/manager");
 
-describe("Employee Status", () => {
-    describe("ManagerTitle - GetEmployeeTitle", () => {
+describe("Employee Status Test", () => {
+    describe("Employee Method - GetEmployeeName", () => {
         it("should return 'Manager' ", () => {
             // Setup
-            const manager = new Manager;
+            const manager = new Manager();
 
             //Expect/Execute
-            expect(manager.getEmployeeTitle()).toEqual("Manager Title");
+            expect(manager.getEmployeeName()).toEqual("Manager");
         });
     });
 });
