@@ -9,6 +9,120 @@ const inquirer = require('inquirer');
   const Intern = require('./lib/Intern');
   const fs = require('fs');
 
-  // const employeeList = [];
+  const employeeList = [];
+  const createManager = ()=>{
+    inquirer.prompt([
+      {
+        type:"input",
+        name: "name",
+        message: "What is the manager's name?"
+      },
+      {
+        type:"input",
+        name: "id",
+        message: "What is the manager's id?"
+      },
+      {
+        type:"input",
+        name: "email",
+        message: "What is the manager's email?"
+      },
+      {
+        type:"input",
+        name: "officeNumber",
+        message: "What is the manager's office number?"
+      }
+    ]).then((answers)=>{
+      const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+      employeeList.push(manager);
+      mainMenu()
+    })
+  }
+  const mainMenu = ()=>{
+    inquirer.prompt([
+      {
+        type: "list",
+        name: "choice",
+        message: "What would you like to do next?",
+        choices: ["Add Engineer", "Add Intern", "Build Team"],
+      }
+    ]).then((answers)=>{
+      switch(answers.choice){
+        case "Add Engineer":
+          addEngineer();
+          break;
+        case "Add Intern":
+          addIntern();
+          break;
+        default:
+          buildTeam()
+      }
+    })
+  }  
 
+  const createEngineer = ()=>{
+    inquirer.prompt([
+      {
+        type:"input",
+        name: "name",
+        message: "What is the engineer's name?"
+      },
+      {
+        type:"input",
+        name: "id",
+        message: "What is the engineer's id?"
+      },
+      {
+        type:"input",
+        name: "email",
+        message: "What is the engineer's email?"
+      },
+      {
+        type:"input",
+        name: "github",
+        message: "What is the engineer's github?"
+      }
+    ]).then((answers)=>{
+      const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
+      employeeList.push(engineer);
+      mainMenu()
+    })
+  }
   
+  const createIntern = ()=>{
+    inquirer.prompt([
+      {
+        type:"input",
+        name: "name",
+        message: "What is the intern's name?"
+      },
+      {
+        type:"input",
+        name: "id",
+        message: "What is the intern's id?"
+      },
+      {
+        type:"input",
+        name: "email",
+        message: "What is the intern's email?"
+      },
+      {
+        type:"input",
+        name: "school",
+        message: "What is the intern's school?"
+      }
+    ]).then((answers)=>{
+      const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+      employeeList.push(intern);
+      mainMenu()
+    })
+
+
+
+
+
+
+
+  createManager();
+  createEngineer();
+  createIntern()

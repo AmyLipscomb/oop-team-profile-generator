@@ -1,0 +1,1 @@
+//where i will create the cards in HTML but inside of backticks to be done to generate
