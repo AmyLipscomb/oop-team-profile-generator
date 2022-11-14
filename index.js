@@ -60,7 +60,7 @@ const inquirer = require('inquirer');
     })
   }  
 
-  const createEngineer = ()=>{
+  const addEngineer = ()=>{
     inquirer.prompt([
       {
         type:"input",
@@ -89,7 +89,7 @@ const inquirer = require('inquirer');
     })
   }
   
-  const createIntern = ()=>{
+  const addIntern = ()=>{
     inquirer.prompt([
       {
         type:"input",
@@ -115,14 +115,9 @@ const inquirer = require('inquirer');
       const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
       employeeList.push(intern);
       mainMenu()
-    })
+    })}
 
 
 
-
-
-
-
-  createManager();
-  createEngineer();
-  createIntern()
+  createManager(); //leave at the bottom so that it doesn't get hoisted at the top.
+ 
