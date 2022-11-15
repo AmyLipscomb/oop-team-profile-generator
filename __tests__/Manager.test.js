@@ -1,16 +1,13 @@
-// const Manager = require("../lib/manager");
+const Manager = require("../lib/Manager");
 
-// describe("Employee Status Test", () => {
-//     describe("Employee Method - GetEmployeeName", () => {
-//         it("should return 'Manager' ", () => {
-//             // Setup
-//             const manager = new Manager();
+//Want to test the getRole 
+    //Passed- Done
+test("Testing Role",()=>{
+    const getRole = "Manager"
+    const manager = new Manager(getRole)
+    expect(manager.getRole()).toBe(getRole)
+})
 
-//             //Expect/Execute
-//             expect(manager.getEmployeeName()).toEqual("Manager");
-//         });
-//     });
-// });
+
 
 //Want to test that you're getting the officenumber
-//Want to test the getRole

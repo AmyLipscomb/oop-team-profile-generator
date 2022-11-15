@@ -22,7 +22,7 @@ test("Setting ID via constructor",()=>{
 })
 
 //Fail
-test("Can get ID via method",()=>{
+test("Can get id via method",()=>{
     const id = "1"
     const emp = new Employee(id)
     expect(emp.getId()).toBe(id)
@@ -41,6 +41,14 @@ test("Can get email via method",()=>{
     const emp = new Employee(email)
     expect(emp.getEmail()).toBe(email)
 })
+
+//Pass
+test("Can get role via method",()=>{
+    const role = "Employee"
+    const emp = new Employee(role)
+    expect(emp.getRole()).toBe(role)
+})
+
 
 
 //everything i need to do via the constructor, i have to test here

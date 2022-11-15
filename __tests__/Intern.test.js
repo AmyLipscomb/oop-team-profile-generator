@@ -1,13 +1,14 @@
-// const Intern = require("../lib/intern");
+const Intern = require("../lib/Intern");
 
-// describe("Employee Status Test", () => {
-//     describe("Employee Method - GetEmployeeName", () => {
-//         it("should return 'Intern' ", () => {
-//             // Setup
-//             const intern = new Intern();
+//Passed
+test("Testing Role",()=>{
+    const getRole = "Intern"
+    const intern = new Intern(getRole)
+    expect(intern.getRole()).toBe(getRole)
+})
 
-//             //Expect/Execute
-//             expect(intern.getEmployeeName()).toEqual("Intern");
-//         });
-//     });
-// });
+
+
+//Need to add test for school
+
+

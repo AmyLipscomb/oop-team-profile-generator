@@ -1,15 +1,17 @@
 const Engineer = require("../lib/Engineer");
 
+//Passed 
 test("Testing Role",()=>{
-    const role = "Engineer"
-    const engineer = new Engineer(role)
-    expect(engineer.role()).toBe(role)
+    const getRole = "Engineer"
+    const engineer = new Engineer(getRole)
+    expect(engineer.getRole()).toBe(getRole)
 })
 
+//Fail
 test("Testing gitHub",()=>{
-    const gitHub = "GitHub"
-    const engineer = new Engineer(gitHub)
-    expect(engineer.gitHub).toBe(gitHub)
+    const getGithub = "ibealec"
+    const engineer = new Engineer(getGithub)
+    expect(engineer.getGithub).toBe(getGithub)
 })
 
 
