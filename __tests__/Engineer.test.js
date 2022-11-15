@@ -1,4 +1,34 @@
-// const Engineer = require("../lib/engineer");
+const Engineer = require("../lib/Engineer");
+
+test("Testing Role",()=>{
+    const role = "Engineer"
+    const engineer = new Engineer(role)
+    expect(engineer.role()).toBe(role)
+})
+
+test("Testing gitHub",()=>{
+    const gitHub = "GitHub"
+    const engineer = new Engineer(gitHub)
+    expect(engineer.gitHub).toBe(gitHub)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // describe("Employee Status Test", () => {
 //     describe("Employee Method - GetEmployeeName", () => {
