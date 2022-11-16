@@ -68,7 +68,12 @@ This project is licensed under MIT.
 
 Within this repo, four javascript test files were created, and within each file, several tests were included. Below is a screenshot of the "Employee" tests I created. 
 
-![employee test](./Assets/images/eetestscreenshot.png)
+![employee test](./Assets/images/eetestjspass.png)
+
+
+After several trial and errors, all of the tests finally passed! See below:
+
+![tests passed](./Assets/images/testspassing.png)
 
  ---
 
