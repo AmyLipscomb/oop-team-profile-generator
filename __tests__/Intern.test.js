@@ -1,6 +1,6 @@
 const Intern = require("../lib/Intern");
 
-//Passed
+//Want to test the getRole - Passed 
 test("Testing Role",()=>{
     const getRole = "Intern"
     const intern = new Intern(getRole)
@@ -9,6 +9,10 @@ test("Testing Role",()=>{
 
 
 
-//Need to add test for school
-
+//Want to test school - Passed 
+test("Testing School",()=>{
+    const getSchool = this.school
+    const intern = new Intern(getSchool)
+    expect(intern.getSchool()).toBe(getSchool)
+})
 
