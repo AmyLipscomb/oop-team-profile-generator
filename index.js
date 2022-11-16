@@ -8,6 +8,7 @@ const inquirer = require('inquirer');
   const Engineer = require('./lib/Engineer');
   const Intern = require('./lib/Intern');
   const fs = require('fs');
+  
 
   const employeeList = [];
   const createManager = ()=>{
@@ -116,6 +117,14 @@ const inquirer = require('inquirer');
       employeeList.push(intern);
       mainMenu()
     })}
+
+
+      const generateLists = () => {
+        let myList = ``;
+        fs.createReadStream.map
+      }
+
+
 
 
 
