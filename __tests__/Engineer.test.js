@@ -1,17 +1,18 @@
 const Engineer = require("../lib/Engineer");
 
-//Passed 
+
+//Want to test the getRole - Passed 
 test("Testing Role",()=>{
     const getRole = "Engineer"
     const engineer = new Engineer(getRole)
     expect(engineer.getRole()).toBe(getRole)
-})
+});
 
-//Fail
+//Want to test the github- Passed 
 test("Testing gitHub",()=>{
-    const getGithub = "ibealec"
+    const getGithub = this.github //made this equal to what was being returned in the function on 'Engineer.js'
     const engineer = new Engineer(getGithub)
-    expect(engineer.getGithub).toBe(getGithub)
+    expect(engineer.getGithub()).toBe(getGithub)
 })
 
 
@@ -31,18 +32,3 @@ test("Testing gitHub",()=>{
 
 
 
-
-// describe("Employee Status Test", () => {
-//     describe("Employee Method - GetEmployeeName", () => {
-//         it("should return 'Engineer' ", () => {
-//             // Setup
-//             const engineer = new Engineer();
-
-//             //Expect/Execute
-//             expect(engineer.getEmployeeName()).toEqual("Engineer");
-//         });
-//     });
-// });
-
-//Want to test the getRole
-//Want to test the github
