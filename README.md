@@ -68,7 +68,7 @@ This project is licensed under MIT.
 
 Within this repo, four javascript test files were created, and within each file, several tests were included. Below is a screenshot of the "Employee" tests I created. 
 
-![employee.test.js](./dist/images/employee.test.js-screenshot.png)
+![employee test](./dist/images/eetestscreenshot.png)
 
  ---
 
