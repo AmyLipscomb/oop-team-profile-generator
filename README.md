@@ -10,7 +10,7 @@
  * Id 
  * Email
 
- However, there were also a few differences. For a manager, the office number had to be displayed, whereas for engineers, their GitHubs had to be shared. The only other item that was needed for the intern, was the name of their school. To see the steps I've taken within the terminal, please continue to read along, as well as watch my [step-by-step video](). I hope you enjoy and learn something new! 
+ However, there were also a few differences. For a manager, the office number had to be displayed, whereas for engineers, their GitHubs had to be shared. The only other item that was needed for the intern, was the name of their school. To see the steps I've taken within the terminal, please continue to read along, as well as watch my [step-by-step video](https://drive.google.com/file/d/1nTy6C21mEpzGbNvzeZGTgC4rYGcDgzL4/view). I hope you enjoy and learn something new! 
 
 ----
 ## Table of Contents 

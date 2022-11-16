@@ -119,14 +119,6 @@ const inquirer = require('inquirer');
     })}
 
 
-      const generateLists = () => {
-        let myList = ``;
-        fs.createReadStream.map
-      }
-
-
-
-
-
+ 
   createManager(); //leave at the bottom so that it doesn't get hoisted at the top.
  
