@@ -1,7 +1,7 @@
 const Manager = require("../lib/Manager");
 
 //Want to test the getRole 
-    //Passed- Done
+    //Passed
 test("Testing Role",()=>{
     const getRole = "Manager"
     const manager = new Manager(getRole)
@@ -10,4 +10,11 @@ test("Testing Role",()=>{
 
 
 
-//Want to test that you're getting the officenumber
+//Want to test that you're getting the office number 
+    //Passed
+
+test("Testing Office Number",()=>{
+    const getOfficeNumber = this.officeNumber
+    const manager = new Manager(getOfficeNumber)
+    expect(manager.getOfficeNumber()).toBe(getOfficeNumber)
+})
