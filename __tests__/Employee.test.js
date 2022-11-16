@@ -21,11 +21,11 @@ test("Setting ID via constructor",()=>{
     expect(emp.name).toBe(id)
 })
 
-//Fail
+//Passed
 test("Can get id via method",()=>{
-    const id = "1"
-    const emp = new Employee(id)
-    expect(emp.getId()).toBe(id)
+    const getId = this.id
+    const emp = new Employee(this.id)
+    expect(emp.getId()).toBe(this.id)
 })
 
 //Passed
@@ -35,14 +35,14 @@ test("Setting Email via constructor",()=>{
     expect(emp.name).toBe(email)
 })
 
-//Fail
+//Passed
 test("Can get email via method",()=>{
-    const email = "john@fakemail.com"
-    const emp = new Employee(email)
-    expect(emp.getEmail()).toBe(email)
+    const getEmail = this.email
+    const emp = new Employee(this.email)
+    expect(emp.getEmail()).toBe(this.email)
 })
 
-//Pass
+//Passed
 test("Can get role via method",()=>{
     const role = "Employee"
     const emp = new Employee(role)
